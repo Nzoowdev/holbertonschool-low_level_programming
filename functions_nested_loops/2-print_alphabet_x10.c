@@ -8,7 +8,7 @@ void print_alphabet_x10(void)
 int fin;
 char autoalph;
 {
-for (fin = 0; fin <= 10; fin++)
+for (fin = 0; fin <= 9; fin++)
 {
 for (autoalph = 'a'; autoalph <= 'z'; autoalph++)
 _putchar (autoalph);
