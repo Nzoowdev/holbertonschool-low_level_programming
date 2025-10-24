@@ -8,10 +8,10 @@
  * Return: 1 if c is lowercase, 0 otherwise
  */
 
-int _islower(int min)
+int _islower(int c)
 
 {
-	if (min >= 'a' && min <= 'z')
+	if (c >= 'a' && c <= 'z')
 	{
 		return (1);
 	}
