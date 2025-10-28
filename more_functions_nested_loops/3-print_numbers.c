@@ -15,5 +15,4 @@ void print_numbers(void)
 		_putchar(calc);
 		_putchar('\n');
 	}
-	return (0);
 }
