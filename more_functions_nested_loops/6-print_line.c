@@ -10,16 +10,13 @@ void print_line(int n)
 {
 	int compteur;
 
-	if (n <= 0)
+	for (compteur = 0; compteur < n; compteur++)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (compteur = 0; compteur <= n; compteur++)
+		if (n == 0)
 		{
-			_putchar('0'+'_');
+			_putchar('\n');
 		}
-		_putchar('\n');
+		_putchar('_');
 	}
+	_putchar('\n');
 }
