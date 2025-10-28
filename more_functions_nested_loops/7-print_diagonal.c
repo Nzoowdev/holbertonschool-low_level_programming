@@ -7,6 +7,7 @@
 void print_diagonal(int n)
 {
 	int check;
+	int possitive;
 
 	for (check = 0; check < n; check++)
 	{
@@ -14,9 +15,9 @@ void print_diagonal(int n)
 		{
 			_putchar('\n');
 		}
-		else if (check <= 0)
+		else if (check >= 0)
 		{
-			_putchar('0');
+			_putchar('\0');
 			_putchar(92);
 			_putchar('\n');
 		}
