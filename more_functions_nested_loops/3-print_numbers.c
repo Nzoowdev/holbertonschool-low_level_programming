@@ -13,6 +13,6 @@ void print_numbers(void)
 	for (calc = '0'; calc <= '9'; calc++)
 	{
 		_putchar(calc);
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
