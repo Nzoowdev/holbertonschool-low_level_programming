@@ -7,8 +7,6 @@
 void print_diagonal(int n)
 {
 	int check;
-	int possitive;
-
 	for (check = 0; check < n; check++)
 	{
 		if (check == 0)
