@@ -14,16 +14,12 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-	else if (n >= 0)
-	{
-		_putchar('\n');
-	}
 	else
 	{
 		for (compteur = 0; compteur <= n; compteur++)
 		{
-			_putchar('_');
-			_putchar('\n');
+			_putchar('_'+ '0');
 		}
+		_putchar('\n');
 	}
 }
