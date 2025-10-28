@@ -7,6 +7,7 @@
 void print_most_numbers(void)
 {
 	int calc;
+
 	for (calc = 0; calc <= 9; calc++)
 	{
 		if ((calc != 2) && (calc != 4))
