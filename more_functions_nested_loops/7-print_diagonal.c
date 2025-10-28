@@ -13,12 +13,8 @@ void print_diagonal(int n)
 		{
 			_putchar('\n');
 		}
-		else if (check >= 0)
-		{
-			_putchar('\0');
-			_putchar(92);
-			_putchar('\n');
-		}
+		_putchar(92);
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
