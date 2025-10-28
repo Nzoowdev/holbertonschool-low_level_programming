@@ -18,7 +18,7 @@ void print_line(int n)
 	{
 		for (compteur = 0; compteur <= n; compteur++)
 		{
-			_putchar('_'+ '0');
+			_putchar('0'+'_');
 		}
 		_putchar('\n');
 	}
