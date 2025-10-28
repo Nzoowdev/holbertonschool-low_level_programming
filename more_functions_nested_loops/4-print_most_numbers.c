@@ -6,12 +6,12 @@
  */
 void print_most_numbers(void)
 {
-	char calc;
-	for (calc = '0'; calc <= '9'; calc++)
+	int calc;
+	for (calc = 0; calc <= 9; calc++)
 	{
-		if (calc == '2' || calc == '4')
+		if ((calc == 2) || (calc == 4))
 		{
-			continue;
+			_putchar(calc + '0');
 		}
 	}
 	_putchar('\n');
