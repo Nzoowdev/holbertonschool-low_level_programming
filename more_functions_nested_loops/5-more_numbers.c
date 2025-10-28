@@ -5,7 +5,7 @@
 void more_numbers(void)
 {
 int ligne;
-char nombre;
+int nombre;
 {
 for (ligne = 0; ligne <= 10; ligne++)
 {
