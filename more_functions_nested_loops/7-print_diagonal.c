@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * print_diagonal - check the code
- *
+ *@n:valeur
+ * 
  */
 void print_diagonal(int n)
 {
@@ -14,6 +15,7 @@ void print_diagonal(int n)
 			_putchar('\n');
 		}
 		_putchar(92);
+		_putchar('\n');
 	}
 	_putchar('\n');
 }
