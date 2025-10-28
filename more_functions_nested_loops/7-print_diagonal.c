@@ -7,18 +7,18 @@
 void print_diagonal(int n)
 {
 	int check;
+	int space;
 	for (check = 0; check < n; check++)
 	{
 		if (check == 0)
 		{
 			_putchar('\n');
 		}
-		else if (n <= 0)
-		{
-			_putchar('0');
-		}
-		_putchar(92);
-		_putchar('\n');
 	}
+	for (space = '0'; space <= n; space++)
+	{
+		_putchar(space);
+	}
+	_putchar(92);
 	_putchar('\n');
 }
