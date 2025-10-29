@@ -8,10 +8,9 @@ void print_diagonal(int n)
 {
 	int check;
 
-	for (check = 92; check < n; check++)
-		;
+	for (check = 92; check < n; check++);
 
-	if (check = '0')
+	if (n == '0')
 	{
 		_putchar('0');
 	}
