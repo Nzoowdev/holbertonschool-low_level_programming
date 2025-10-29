@@ -8,15 +8,16 @@ int main(void)
 	int min1;
 	int min2 = '*3';
 	int min3 = '*5';
-	int resultat = min2 + min3;
+	int Fizz = "Fizz";
+	int Buzz = "Buzz";
 
 	for (min1 = 1; min1 <= 100; min1++)
 	{
 		if (min2 < '*3')
-			_putchar('Fizz');
+			_putchar(Fizz);
 
 		if (min3 < '*5')
-			_putchar('Buzz');
+			_putchar(Buzz);
 	}
 
 	return (0);
