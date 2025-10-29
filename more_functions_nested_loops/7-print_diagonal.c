@@ -10,7 +10,7 @@ void print_diagonal(int n)
 
 	for (check = 92; check < n; check++);
 
-	if (n == 0)
+	if (n == '\e')
 	{
 		_putchar(' ');
 	}
