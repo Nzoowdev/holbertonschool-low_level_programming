@@ -14,11 +14,6 @@ void print_triangle(int size)
 		{
 			_putchar(' ');
 		}
-		else if (size <= 0)
-		{
-			_putchar('\n');
-		}
-
 		else if (size > 0)
 		{
 			_putchar('#');
@@ -28,6 +23,6 @@ void print_triangle(int size)
 			_putchar('\n');
 		}
 		return;
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
