@@ -10,13 +10,13 @@ void print_triangle(int size)
 
 	for (space = 0; space < size; space++)
 	{
-		if (size > 0)
-		{
-			_putchar(' ');
-		}
-		else if (size == 0)
+		if (size <= 0)
 		{
 			_putchar('\n');
+		}
+		else if (size > 0)
+		{
+			_putchar(' ');
 		}
 		else
 		{
