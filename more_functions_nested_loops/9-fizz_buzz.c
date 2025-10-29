@@ -6,6 +6,9 @@
 int main(void)
 {
 	int min1;
+	char FizzBuzz;
+	char Buzz;
+	char Fizz;
 
 	for (min1 = 1; min1 <= 100; min1++)
 	{
