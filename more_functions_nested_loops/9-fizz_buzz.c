@@ -1,38 +1,36 @@
-#include "main.h"
+#include <stdio.h>
 /**
- * main - check the code
+ * main - Entry point for FizzBuzz.
  *
+ * Return: Always 0.
  */
 int main(void)
 {
-	int min1;
-	char FizzBuzz;
-	char Buzz;
-	char Fizz;
+	int i;
 
-	for (min1 = 1; min1 <= 100; min1++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (min1 % 15 == 0)
+		if (i % 15 == 0)
 		{
-			_putchar(FizzBuzz);
+			printf("FizzBuzz");
 		}
-		else if (min1 % 5 == 0)
+		else if (i % 3 == 0)
 		{
-			_putchar(Buzz);
+			printf("Fizz");
 		}
-		else if (min1 % 3 == 0)
+		else if (i % 5 == 0)
 		{
-			_putchar(Fizz);
+			printf("Buzz");
 		}
 		else
 		{
-			_putchar("%d", min1);
+			printf("%d", i);
 		}
-		if (min1 < 100)
+		if (i < 100)
 		{
-			_putchar(" ");
+			printf(" ");
 		}
 	}
-
+	printf("\n");
 	return (0);
 }
