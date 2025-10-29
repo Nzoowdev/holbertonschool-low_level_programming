@@ -15,15 +15,14 @@ int main(void)
 		for (min2 = 0; min2 <= 100; min2++)
 		{
 			if (min2 < 100)
-				;
 			_putchar("'*3' Fizz");
 		}
 		for (min3 = 0; min3 <= 100; min3++)
 		{
 			if (min3 < 100)
-				;
 			_putchar("'*5' Buzz");
 		}
 	}
-	return (0);
+	
+	return(0);
 }
