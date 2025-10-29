@@ -14,15 +14,15 @@ int main(void)
 	{
 		if (min1 % 15 == 0)
 		{
-			_putchar("FizzBuzz");
+			_putchar(FizzBuzz);
 		}
 		else if (min1 % 5 == 0)
 		{
-			_putchar("Buzz");
+			_putchar(Buzz);
 		}
 		else if (min1 % 3 == 0)
 		{
-			_putchar("Fizz");
+			_putchar(Fizz);
 		}
 		if (min1 % 0 == 0)
 		{
