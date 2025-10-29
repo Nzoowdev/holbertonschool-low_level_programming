@@ -1,27 +1,27 @@
 #include "main.h"
 /**
- * main - Entry point for FizzBuzz.
- *
- * Return: Always 0.
+ * print_triangle - check the code
+ * @size: size
  */
 void print_triangle(int size)
 {
-	int space;
+	int i, j;
 
-	for (space = 0; space < size; space++)
+	if (size > 0)
 	{
-		if (size <= 0)
+		for (i = 1; i <= size; i++)
 		{
+			for (j = 1; j <= size - i; j++)
+			{
+				_putchar(' ');
+			}
+			for (j = 1; j <= i; j++)
+			{
+				_putchar('#');
+			}
 			_putchar('\n');
 		}
-		else if (size > 0)
-		{
-			_putchar(' ');
-		}
-		else
-		{
-			_putchar('#');
-		}
 	}
-	_putchar('\n');
+	else
+		_putchar('\n');
 }
