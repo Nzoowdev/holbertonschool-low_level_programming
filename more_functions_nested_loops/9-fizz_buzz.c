@@ -24,10 +24,13 @@ int main(void)
 		{
 			_putchar(Fizz);
 		}
-		if (min1 % 0 == 0)
+		else
 		{
-			_putchar(min1);
-			_putchar('\\');
+			_putchar("%d", min1);
+		}
+		if (min1 < 100)
+		{
+			_putchar(" ");
 		}
 	}
 
