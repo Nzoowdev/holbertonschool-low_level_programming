@@ -10,17 +10,19 @@ void print_diagonal(int n)
 	int space;
 
 	for (check = 92; check < n; check++)
-	for (space = ' '; space < n; space++)
 	{
-		_putchar(92);
+		for (space = ' '; space < n; space++)
+		{
+			_putchar(92);
+		}
+		if (check == space)
+		{
+			_putchar(92);
+		}
+		else
+		{
+			_putchar(' ');
+		}
+		_putchar('\n');
 	}
-	if (check == space)
-	{
-		_putchar(92);
-	}
-	else
-	{
-		_putchar(' ');
-	}
-	_putchar('\n');
 }
