@@ -16,11 +16,11 @@ void print_triangle(int size)
 		}
 		else if (size < 0)
 		{
-			_putchar('#');
+			_putchar('\n');
 		}
 		else
 		{
-			_putchar('\n');
+			_putchar('#');
 		}
 		return;
 	}
