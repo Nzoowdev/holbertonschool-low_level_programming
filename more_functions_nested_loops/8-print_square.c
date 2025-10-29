@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_diagonal - check the code
+ * print_square - check the code
  *@size:valeur
  *
  */
@@ -8,7 +8,7 @@ void print_square(int size)
 {
 	int longueur, largeur = 0;
 
-	if (size > 0)
+	if (size <= 0)
 	{
 		_putchar('\n');
 	}
@@ -25,6 +25,6 @@ void print_square(int size)
 				_putchar('\n');
 			}
 		}
-		_putchar('\n');
 	}
+	_putchar('\n');
 }
