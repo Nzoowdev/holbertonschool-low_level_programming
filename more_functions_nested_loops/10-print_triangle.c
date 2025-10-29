@@ -18,11 +18,14 @@ void print_triangle(int size)
 		{
 			_putchar('\n');
 		}
-		else
+		else if (size > 0)
 		{
 			_putchar('#');
-			
 		}
-	}	_putchar('\n');
+		else
+		{
+			_putchar('\n');
+		}
+	}
 	_putchar('\n');
 }
