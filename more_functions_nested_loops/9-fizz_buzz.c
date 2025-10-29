@@ -6,8 +6,8 @@
 int main(void)
 {
 	int min1;
-	int min2 = '*3';
-	int min3 = '*5';
+	int min2 = '% 3';
+	int min3 = '% 5';
 	int Fizz = "Fizz";
 	int Buzz = "Buzz";
 
