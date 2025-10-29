@@ -1,23 +1,31 @@
 #include "main.h"
 /**
- * print_square - check the code
+ * main - check the code
  *
  */
 int main(void)
 {
 	int min1;
-	int min2 = '% 3';
-	int min3 = '% 5';
-	int Fizz = "Fizz";
-	int Buzz = "Buzz";
 
 	for (min1 = 1; min1 <= 100; min1++)
 	{
-		if (min2 < '*3')
-			_putchar(Fizz);
-
-		if (min3 < '*5')
-			_putchar(Buzz);
+		if (min1 == 15)
+		{
+			_putchar("FizzBuzz");
+		}
+		else if (min1 == 5)
+		{
+			_putchar("Buzz");
+		}
+		else if (min1 == 3)
+		{
+			_putchar("Fizz");
+		}
+		if (min1 == 0)
+		{
+			_putchar(min1);
+			_putchar('\\');
+		}
 	}
 
 	return (0);
