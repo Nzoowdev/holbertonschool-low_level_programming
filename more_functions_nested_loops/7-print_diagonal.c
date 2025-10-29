@@ -10,9 +10,9 @@ void print_diagonal(int n)
 
 	for (check = 92; check < n; check++);
 
-	if (n == '0')
+	if (n == ' ')
 	{
-		_putchar('0');
+		_putchar(' ');
 	}
 	else
 	{
