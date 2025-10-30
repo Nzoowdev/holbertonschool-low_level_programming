@@ -7,14 +7,17 @@
 void reset_to_98(int *n)
 {
 	int i;
-	*n = &i;
+	int *p;
+	*p = &i;
+	*p = *n;
 
-	for (i = 0; i <= *n; *n++)
+	for (i = 0; i < *n; *n++)
 	{
-		if (i = *n)
+		while (i = *n)
 		{
 			putchar(i);
 		}
 		return;
 	}
+	putchar('\n');
 }
