@@ -13,7 +13,7 @@ void reset_to_98(int *n)
 
 	for (i = 0; i < *n; *n++)
 	{
-		while (i = *n)
+		while (i == *n)
 		{
 			putchar(i);
 		}
