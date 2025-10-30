@@ -6,5 +6,10 @@
  */
 int _strlen(char *s)
 {
-	return(*s);
+	int i;
+
+	for (i = 0; i <= *s; i++)
+	{
+		return (*s);
+	}
 }
