@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strlen - check the code
  * @s: pointer a
@@ -11,5 +12,5 @@ int _strlen(char *s)
 
 	i = *s;
 	j = _strlen(i);
-	_strlen(j) == i;
+	putchar(j);
 }
