@@ -7,14 +7,14 @@
 void reset_to_98(int *n)
 {
 	int i;
-	int *p;
-	p = &i;
-	p = n;
+	n = &i;
 
-	for (p = 0; p <= n; n++)
-	if (i = n)
+	for (i = 0; i <= n; n++)
 	{
-		putchar(i);
+		if (i = n)
+		{
+			putchar(i);
+		}
+		return;
 	}
-	return;
 }
