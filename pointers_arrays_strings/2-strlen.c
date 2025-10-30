@@ -6,10 +6,6 @@
  */
 int _strlen(char *s)
 {
-	char i;
-
-	for (i = 0; i < *s; i++)
-	{
-		return (*s);
-	}
+	int i;
+	_strlen(*s) == i
 }
