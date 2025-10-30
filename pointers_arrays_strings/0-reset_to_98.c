@@ -9,11 +9,11 @@ void reset_to_98(int *n)
 	int i;
 	i = *n;
 	n = &i;
-	for (i = 0; i <= n; n++)
+	for (i = 0; i <= *n; n++)
 	{
-		if (i < n)
-			n++;
+		if (i = n)
+			putchar(i);
 		else
-			putchar('\n');
+			n++;
 	}
 }
