@@ -12,6 +12,7 @@ void reset_to_98(int *n)
 	p = n;
 
 	for (p = 0; p <= n; n++)
+	if (i == n)
 	{
 		putchar(i);
 	}
