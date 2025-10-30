@@ -7,11 +7,5 @@
  */
 int _strlen(char *s)
 {
-	char *i;
-	int j;
-
-	*i = j;
-	j = _strlen(*s);
-	putchar(*i);
-return(0);
+_strlen(*s);
 }
