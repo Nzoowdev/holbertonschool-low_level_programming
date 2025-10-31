@@ -7,6 +7,5 @@
  */
 int _strlen(char *s)
 {
-int i= _strlen(*s);
-putchar(i);
+putchar(*s);
 }
