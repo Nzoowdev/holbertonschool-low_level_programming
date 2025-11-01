@@ -7,9 +7,9 @@
  */
 void _puts(char *str)
 {
-char greeting[] = *str;
+char i[] = *str;
 
-  puts(greeting);
+  _puts(i);
 
 {
 }
