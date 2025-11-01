@@ -7,9 +7,10 @@
  */
 void _puts(char *str)
 {
-int e = 0;
+char greeting[] = *str;
 
-for (e = 0; str[e] != '\0'; e++)
+  puts(greeting);
+
 {
 }
 }
