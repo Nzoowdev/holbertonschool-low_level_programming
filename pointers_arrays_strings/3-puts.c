@@ -7,9 +7,11 @@
  */
 void _puts(char *str)
 {
-	char i[] = str;
-	char* j = i;
+	char string = *str;
+	char *i;
 
-  _puts(j);
-  _puts('\n');
+	i = string;
+
+	_puts(string);
+	_puts('\n');
 }
