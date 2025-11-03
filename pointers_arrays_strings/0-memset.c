@@ -1,10 +1,11 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _memset = check the code
+ * _memset - function that fills memory with a constant byte
  * @s: table
  * @b: variable
  * @n: taille
+ * Return: always 0
  */
 char *_memset(char *s, char b, unsigned int n)
 {
