@@ -3,8 +3,8 @@
 /**
  * _memset = check the code
  * @s: table
- * @b: variable 
- * @n: taille 
+ * @b: variable
+ * @n: taille
  */
 char *_memset(char *s, char b, unsigned int n)
 {
