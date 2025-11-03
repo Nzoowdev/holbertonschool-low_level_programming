@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _memset - function that fills memory with a constant byte
+ * _memcpy - function that copy memory with a constant byte
  * @dest: table
  * @src: variable
  * @n: taille
