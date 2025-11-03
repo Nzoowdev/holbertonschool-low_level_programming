@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * *_memset - check the code
- *@s: pointer
- *@b: variable
- *@n: variable
+ * _memset = check the code
+ * @s: table
+ * @b: variable 
+ * @n: taille 
  */
 char *_memset(char *s, char b, unsigned int n)
 {
