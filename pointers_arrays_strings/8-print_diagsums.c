@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_chessboard - print table
+ * print_diagsums - prints two diagonals
  * @a: table
  * @size:
  * Return: always 0
