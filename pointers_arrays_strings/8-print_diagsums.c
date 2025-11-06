@@ -6,7 +6,7 @@
  * @size:
  * Return: always 0
  */
-void print_diagsums(int *a, int size);
+void print_diagsums(int *a, int size)
 {
 	int i;
 	int sum1 = 0;
