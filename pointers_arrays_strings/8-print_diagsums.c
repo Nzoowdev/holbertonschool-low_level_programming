@@ -3,7 +3,7 @@
 /**
  * print_diagsums - prints two diagonals
  * @a: table
- * @size:
+ * @size: size of table
  * Return: always 0
  */
 void print_diagsums(int *a, int size)
