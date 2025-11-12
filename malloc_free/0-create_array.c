@@ -4,18 +4,30 @@
  * create_array - creates an array of chars, and initializes it with a specific char
  * @size: size of table
  * @c: character on table
- *
+ * Return: return pointer to array, or NULL if fails.
  */
+
 char *create_array(unsigned int size, char c)
 {
-	int i;
+	char *array;
+	unsigned int i;
 
-	for (i = 0; i < c; i++)
+	if (size == 0)
 	{
-		if (i == c)
-		{
-			i++;
-			break;
-		}
+		return (NULL);
 	}
+
+	array = (char *)malloc(size * sizeof(char));
+
+	if (array == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; i < size; i++)
+	{
+		array[i] = c;
+	}
+
+	return (array);
 }
