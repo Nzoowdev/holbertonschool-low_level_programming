@@ -17,12 +17,12 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 != NULL)
 	{
-		white(s1[str1] != '\0');
+		while(s1[str1] != '\0');
 		str1++;
 	}
 	if (s2 != NULL)
 	{
-		white(s2[str2] != '\0');
+		while(s2[str2] != '\0');
 		str2++;
 	}
 	concat = (char *)malloc((str1 + str2 + 1) * sizeof(char));
