@@ -3,10 +3,8 @@
 
 /**
  * alloc_grid - allocates a 2 dimention array of integers
- *
  * @width: the first string.
  * @height: the second string.
- *
  * Return - return code
  */
 
