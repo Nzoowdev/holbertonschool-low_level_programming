@@ -10,7 +10,7 @@
  * Return: pointer to the 2D array frees a 2 dimensional grid previously
  */
 
-void free_grid(int **grid, int height);
+void free_grid(int **grid, int height)
 {
 	int i;
 
