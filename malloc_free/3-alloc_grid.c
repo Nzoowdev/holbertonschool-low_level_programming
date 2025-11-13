@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - pointer to a 2 dimensional array of integers.
+ * alloc_grid - allocates a 2 dimention array of integers
  *
  * @width: the first string.
  * @height: the second string.
