@@ -7,7 +7,7 @@
  * @width: the first string.
  * @height: the second string.
  *
- * return - return code
+ * Return - return code
  */
 
 int **alloc_grid(int width, int height)
