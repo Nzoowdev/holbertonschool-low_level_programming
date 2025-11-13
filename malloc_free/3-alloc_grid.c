@@ -3,10 +3,10 @@
 
 /**
  * alloc_grid - allocates a 2D array of integers.
- * 
+ *
  * @width: the first string.
  * @height: the second string.
- * 
+ *
  * Return: pointer to the 2D array, or NULL if it fails.
  */
 
