@@ -6,7 +6,7 @@
  * @array: pointer array
  * @size: size of pointer
  * @action: pointer a fonction
- * 
+ *
  * Return: Nothing.
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
@@ -22,4 +22,4 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	{
 		action(array[i]);
 	}
-} 
+}
