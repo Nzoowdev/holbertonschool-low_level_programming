@@ -2,7 +2,7 @@
 #include "function_pointers.h"
 
 /**
- * array_iterator - prints an integer
+ * int_index - search an integer
  * @array: table array
  * @size: size of pointer
  * @cmp: pointer a fonction
