@@ -20,17 +20,23 @@ int _atoi(char *s)
 	{
 		if (s[i] == '-' && started == 0)
 		{
-			sign *= -1;
+			sign = -sign;
 		}
 		else if (s[i] == '+' && started == 0)
 		{
-			sign *= 1;
+			/* Plus sign doesn't change anything */
 		}
 		else if (s[i] >= '0' && s[i] <= '9')
 		{
 			started = 1;
 			digit = s[i] - '0';
-			if (sign > 0)
+			
+			if (result > 0)
+			{
+				result = -result;
+			}
+			
+			if (sign < 0)
 			{
 				result = result * 10 - digit;
 			}
@@ -46,7 +52,11 @@ int _atoi(char *s)
 		i++;
 	}
 
-	if (sign > 0)
+	if (sign < 0 && result > 0)
+	{
+		result = -result;
+	}
+	else if (sign > 0 && result < 0)
 	{
 		result = -result;
 	}
