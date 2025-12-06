@@ -22,6 +22,38 @@ void close_file(int fd)
 }
 
 /**
+ * copy_file - copies content from one file to another
+ * @fd_from: source file descriptor
+ * @fd_to: destination file descriptor
+ * @filename: name of destination file for error messages
+ */
+void copy_file(int fd_from, int fd_to, char *filename)
+{
+	ssize_t bytes_read, bytes_written;
+	char buffer[BUFFER_SIZE];
+
+	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	{
+		bytes_written = write(fd_to, buffer, bytes_read);
+		if (bytes_written == -1 || bytes_written != bytes_read)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
+			close_file(fd_from);
+			close_file(fd_to);
+			exit(99);
+		}
+	}
+
+	if (bytes_read == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+		close_file(fd_from);
+		close_file(fd_to);
+		exit(98);
+	}
+}
+
+/**
  * main - copies the content of a file to another file
  * @argc: number of arguments
  * @argv: array of arguments
@@ -31,8 +63,6 @@ void close_file(int fd)
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
-	ssize_t bytes_read, bytes_written;
-	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
 	{
@@ -55,25 +85,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while ((bytes_read = read(fd_from, buffer, BUFFER_SIZE)) > 0)
-	{
-		bytes_written = write(fd_to, buffer, bytes_read);
-		if (bytes_written == -1 || bytes_written != bytes_read)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			close_file(fd_from);
-			close_file(fd_to);
-			exit(99);
-		}
-	}
-
-	if (bytes_read == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		close_file(fd_from);
-		close_file(fd_to);
-		exit(98);
-	}
+	copy_file(fd_from, fd_to, argv[1]);
 
 	close_file(fd_from);
 	close_file(fd_to);
